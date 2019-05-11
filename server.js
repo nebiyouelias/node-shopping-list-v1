@@ -38,6 +38,8 @@ const {Recipes} = require('./models');
 app.use(morgan('common'));
 
 Recipes.create('chocolate milk',['coca','milk','sugar']);
+Recipes.create('Egg sandwitch',['egg',,'crossant']);
+Recipes.create('Spaghtti meatball',['Spaghetti','tomoto sauce','groundbeef']);
 app.get('/Recipes',(req, res) => {
   res.json(Recipes.get());
 });
